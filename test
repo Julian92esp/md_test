@@ -1,0 +1,142 @@
+<!-- Headings -->
+
+# My title
+
+## My title h2
+
+### My title h3
+
+#### My title h4
+
+##### My title h5
+
+###### My title h6
+
+<!-- Italic text -->
+
+This is an _italic_ text
+
+<!-- Strong text -->
+
+This is an **strong** text
+
+<!-- Crossed text -->
+
+This is a ~~crossed~~ out text
+
+<!-- UL -->
+
+- Apple
+  - Apple 2
+    - Apple 3
+- Orange
+  - Orange 2
+- Etc
+
+<!-- OL -->
+
+1. Apple
+   1. Apple 2
+   2. Apple 3
+1. Orange
+   1. Orange 2
+1. Etc
+
+<!-- Link -->
+
+[Portfolio](https://www.julian92esp.com/)
+
+[Portfolio](https://www.julian92esp.com/ 'Custom title')
+
+<!-- Quotes -->
+
+> Always Say Less Than Necessary
+
+> When dealing with people, remember you are not dealing with creatures of logic, but creatures of emotion.
+
+<!-- Break lines -->
+
+---
+
+---
+
+<!-- Insert code -->
+
+`console.log("Hello World!");`
+
+<!-- Multiple lines of code -->
+
+```
+     <!-- Fahrenheit -->
+      <div class="fah">
+        <label for="fahrenheit">Fahrenheit:</label>
+        <input
+          type="number"
+          id="fahrenheit"
+          placeholder="enter the temperature..."
+        />
+      </div>
+      <!-- Fahrenheit End -->
+
+```
+
+```html
+<!-- Fahrenheit -->
+<div class="fah">
+  <label for="fahrenheit">Fahrenheit:</label>
+  <input type="number" id="fahrenheit" placeholder="enter the temperature..." />
+</div>
+<!-- Fahrenheit End -->
+```
+
+```javascript
+    <script>
+      const randomNumber = Math.floor(Math.random() * 100) + 1;
+      let attempts = 0;
+
+      const guessInput = document.getElementById('guessInput');
+      const checkButton = document.getElementById('checkButton');
+      const message = document.getElementById('message');
+
+      checkButton.addEventListener('click', () => {
+        const userGuess = parseInt(guessInput.value);
+        attempts++;
+
+        if (userGuess === randomNumber) {
+          message.textContent = `Congratulations! You guessed the number ${randomNumber} in ${attempts} attempts.`;
+          message.style.color = 'green';
+          guessInput.disabled = true;
+          checkButton.disabled = true;
+        } else if (userGuess < randomNumber) {
+          message.textContent = 'Try higher!';
+          message.style.color = 'blue';
+        } else {
+          message.textContent = 'Try lower!';
+          message.style.color = 'orange';
+        }
+      });
+    </script>
+```
+
+<!-- Tables -->
+
+| **Student** | **Maths** | **History** | **English** | **Spanish** | **Literature** |
+| ----------- | --------- | ----------- | ----------- | ----------- | -------------- |
+| Ana         | 10        | 8           | 8           | 5           | 8              |
+| Lucas       | 5         | 5           | 7           | 10          | 5              |
+| Brandon     | 9         | 10          | 10          | 4           | 10             |
+
+<!-- IMG -->
+
+![visual studio code logo](https://noblinkyblinkycom.files.wordpress.com/2017/09/vsc-logo.png 'vsc logo link')
+
+![visual studio code logo](vsc.png 'vsc logo local')
+
+<!-- GITHUB MD -->
+
+<!-- To Do -->
+
+* [x] Task 1
+* [] Task 2
+* [x] Task 3
+* [] Task 4
